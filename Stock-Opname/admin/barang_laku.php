@@ -43,7 +43,8 @@ if(isset($_GET['tanggal'])){
 		<th>Nama Barang</th>
 		<th>Harga Terjual /pc</th>
 		<th>Total Harga</th>
-		<th>Jumlah</th>			
+		<th>Jumlah</th>
+		<th>Satuan</th>			
 		<th>Laba</th>			
 		<th>Opsi</th>
 	</tr>
@@ -64,7 +65,8 @@ if(isset($_GET['tanggal'])){
 			<td><?php echo $b['nama'] ?></td>
 			<td>Rp.<?php echo number_format($b['harga']) ?>,-</td>
 			<td>Rp.<?php echo number_format($b['total_harga']) ?>,-</td>
-			<td><?php echo $b['jumlah'] ?></td>			
+			<td><?php echo $b['jumlah'] ?></td>	
+			<td><?php echo $b['satuan']?></td>		
 			<td><?php echo "Rp.".number_format($b['laba']).",-"?></td>			
 			<td>		
 				<a href="edit_laku.php?id=<?php echo $b['id']; ?>" class="btn btn-warning">Edit</a>

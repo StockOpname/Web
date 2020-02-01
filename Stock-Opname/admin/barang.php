@@ -55,6 +55,7 @@ $start = ($page - 1) * $per_hal;
 		<th class="col-md-4">Nama Barang</th>
 		<th class="col-md-3">Harga Jual</th>
 		<th class="col-md-1">Jumlah</th>
+		<th class="col-md-1">Satuan</th>
 		<!-- <th class="col-md-1">Sisa</th>		 -->
 		<th class="col-md-3">Opsi</th>
 	</tr>
@@ -74,6 +75,7 @@ $start = ($page - 1) * $per_hal;
 			<td><?php echo $b['nama'] ?></td>
 			<td>Rp.<?php echo number_format($b['harga']) ?>,-</td>
 			<td><?php echo $b['jumlah'] ?></td>
+			<td><?php echo $b['satuan'] ?></td>
 			<td>
 				<a href="det_barang.php?id=<?php echo $b['id']; ?>" class="btn btn-info">Detail</a>
 				<a href="edit.php?id=<?php echo $b['id']; ?>" class="btn btn-warning">Edit</a>
