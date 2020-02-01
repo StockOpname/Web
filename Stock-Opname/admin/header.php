@@ -6,7 +6,7 @@
 	include 'cek.php';
 	include 'config.php';
 	?>
-	<title>KIOS MALASNGODING</title>
+	<title>PT. MATAHARI SURYA MITRA PANGAN</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../assets/js/jquery-ui/jquery-ui.css">
 	<script type="text/javascript" src="../assets/js/jquery.js"></script>
@@ -18,7 +18,7 @@
 	<div class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="http://www.malasngoding.com" class="navbar-brand">KIOS MALASNGODING</a>
+				<a href="" class="navbar-brand">PT. MATAHARI SURYA MITRA PANGAN</a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
