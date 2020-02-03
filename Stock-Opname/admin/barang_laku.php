@@ -41,11 +41,11 @@ if(isset($_GET['tanggal'])){
 		<th>No</th>
 		<th>Tanggal</th>
 		<th>Nama Barang</th>
-		<th>Harga Terjual /pc</th>
-		<th>Total Harga</th>
+		<!-- <th>Harga Terjual /pc</th>
+		<th>Total Harga</th> -->
 		<th>Jumlah</th>
 		<th>Satuan</th>			
-		<th>Laba</th>			
+		<!-- <th>Laba</th>	 -->		
 		<th>Opsi</th>
 	</tr>
 	<?php 
@@ -63,11 +63,11 @@ if(isset($_GET['tanggal'])){
 			<td><?php echo $no++ ?></td>
 			<td><?php echo $b['tanggal'] ?></td>
 			<td><?php echo $b['nama'] ?></td>
-			<td>Rp.<?php echo number_format($b['harga']) ?>,-</td>
-			<td>Rp.<?php echo number_format($b['total_harga']) ?>,-</td>
+			<!-- <td>Rp.<?php echo number_format($b['harga']) ?>,-</td>
+			<td>Rp.<?php echo number_format($b['total_harga']) ?>,-</td> -->
 			<td><?php echo $b['jumlah'] ?></td>	
 			<td><?php echo $b['satuan']?></td>		
-			<td><?php echo "Rp.".number_format($b['laba']).",-"?></td>			
+			<!-- <td><?php echo "Rp.".number_format($b['laba']).",-"?></td> -->			
 			<td>		
 				<a href="edit_laku.php?id=<?php echo $b['id']; ?>" class="btn btn-warning">Edit</a>
 				<a onclick="if(confirm('Apakah anda yakin ingin menghapus data ini ??')){ location.href='hapus_laku.php?id=<?php echo $b['id']; ?>&jumlah=<?php echo $b['jumlah'] ?>&nama=<?php echo $b['nama']; ?>' }" class="btn btn-danger">Hapus</a>
@@ -77,7 +77,7 @@ if(isset($_GET['tanggal'])){
 		<?php 
 	}
 	?>
-	<tr>
+	<!-- <tr>
 		<td colspan="7">Total Pemasukan</td>
 		<?php 
 		if(isset($_GET['tanggal'])){
@@ -104,7 +104,7 @@ if(isset($_GET['tanggal'])){
 		}
 
 		?>
-	</tr>
+	</tr> -->
 </table>
 
 <!-- modal input -->
@@ -135,15 +135,18 @@ if(isset($_GET['tanggal'])){
 							</select>
 
 						</div>									
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<label>Harga Jual / unit</label>
 							<input name="harga" type="text" class="form-control" placeholder="Harga" autocomplete="off">
-						</div>	
+						</div> -->	
 						<div class="form-group">
 							<label>Jumlah</label>
 							<input name="jumlah" type="text" class="form-control" placeholder="Jumlah" autocomplete="off">
 						</div>																	
-
+						<div class="form-group">
+							<label>Satuan</label>
+							<input name="satuan" type="text" class="form-control" placeholder="Satuan" autocomplete="off">
+						</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>

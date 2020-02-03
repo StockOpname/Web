@@ -22,21 +22,25 @@ while($d=mysql_fetch_array($det)){
 				<td>Jenis</td>
 				<td><input type="text" class="form-control" name="jenis" value="<?php echo $d['jenis'] ?>"></td>
 			</tr>
-			<tr>
+			<!-- <tr>
 				<td>Suplier</td>
 				<td><input type="text" class="form-control" name="suplier" value="<?php echo $d['suplier'] ?>"></td>
-			</tr>
-			<tr>
+			</tr> -->
+			<!-- <tr>
 				<td>Modal</td>
 				<td><input type="text" class="form-control" name="modal" value="<?php echo $d['modal'] ?>"></td>
-			</tr>
-			<tr>
+			</tr> -->
+			<!-- <tr>
 				<td>Harga</td>
 				<td><input type="text" class="form-control" name="harga" value="<?php echo $d['harga'] ?>"></td>
-			</tr>
+			</tr> -->
 			<tr>
 				<td>Jumlah</td>
 				<td><input type="text" class="form-control" name="jumlah" value="<?php echo $d['jumlah'] ?>"></td>
+			</tr>
+			<tr>
+				<td>Satuan</td>
+				<td><input type="text" class="form-control" name="satuan" value="<?php echo $d['satuan'] ?>"></td>
 			</tr>
 			<tr>
 				<td></td>

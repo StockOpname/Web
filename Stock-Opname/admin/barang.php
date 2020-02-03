@@ -53,7 +53,11 @@ $start = ($page - 1) * $per_hal;
 	<tr>
 		<th class="col-md-1">No</th>
 		<th class="col-md-4">Nama Barang</th>
+<<<<<<< HEAD
 		<th class="col-md-1 ">Harga Jual</th>
+=======
+		<!--<th class="col-md-3">Harga Jual</th> -->
+>>>>>>> 6e375f0c580c37c32fa97b50624342a6a8b99950
 		<th class="col-md-1">Jumlah</th>
 		<th class="col-md-1">Jumlah SMALL</th>
 		<th class="col-md-1">Jumlah MEDIUM</th>
@@ -75,7 +79,7 @@ $start = ($page - 1) * $per_hal;
 		<tr>
 			<td><?php echo $no++ ?></td>
 			<td><?php echo $b['nama'] ?></td>
-			<td>Rp.<?php echo number_format($b['harga']) ?>,-</td>
+			<!-- <td>Rp.<?php echo number_format($b['harga']) ?>,-</td> -->
 			<td><?php echo $b['jumlah'] ?></td>
 			<td><?php echo $b['Jumlah SMALL'] ?></td>
 			<td><?php echo $b['Jumlah MEDIUM'] ?></td>
@@ -128,22 +132,26 @@ $start = ($page - 1) * $per_hal;
 						<label>Jenis</label>
 						<input name="jenis" type="text" class="form-control" placeholder="Jenis Barang ..">
 					</div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label>Suplier</label>
 						<input name="suplier" type="text" class="form-control" placeholder="Suplier ..">
-					</div>
-					<div class="form-group">
+					</div> -->
+					<!-- <div class="form-group">
 						<label>Harga Modal</label>
 						<input name="modal" type="text" class="form-control" placeholder="Modal per unit">
-					</div>	
-					<div class="form-group">
+					</div> -->	
+					<!-- <div class="form-group">
 						<label>Harga Jual</label>
 						<input name="harga" type="text" class="form-control" placeholder="Harga Jual per unit">
-					</div>	
+					</div> -->	
 					<div class="form-group">
 						<label>Jumlah</label>
 						<input name="jumlah" type="text" class="form-control" placeholder="Jumlah">
-					</div>																	
+					</div>
+					<div class="form-group">
+						<label>Satuan</label>
+						<input name="satuan" type="text" class="form-control" placeholder="Satuan">
+					</div>																		
 
 				</div>
 				<div class="modal-footer">
