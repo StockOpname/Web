@@ -53,9 +53,15 @@ $start = ($page - 1) * $per_hal;
 	<tr>
 		<th class="col-md-1">No</th>
 		<th class="col-md-4">Nama Barang</th>
+<<<<<<< HEAD
+		<th class="col-md-1 ">Harga Jual</th>
+=======
 		<!--<th class="col-md-3">Harga Jual</th> -->
+>>>>>>> 6e375f0c580c37c32fa97b50624342a6a8b99950
 		<th class="col-md-1">Jumlah</th>
-		<th class="col-md-1">Satuan</th>
+		<th class="col-md-1">Jumlah SMALL</th>
+		<th class="col-md-1">Jumlah MEDIUM</th>
+		<th class="col-md-1">Jumlah LARGE</th>
 		<!-- <th class="col-md-1">Sisa</th>		 -->
 		<th class="col-md-3">Opsi</th>
 	</tr>
@@ -75,7 +81,9 @@ $start = ($page - 1) * $per_hal;
 			<td><?php echo $b['nama'] ?></td>
 			<!-- <td>Rp.<?php echo number_format($b['harga']) ?>,-</td> -->
 			<td><?php echo $b['jumlah'] ?></td>
-			<td><?php echo $b['satuan'] ?></td>
+			<td><?php echo $b['Jumlah SMALL'] ?></td>
+			<td><?php echo $b['Jumlah MEDIUM'] ?></td>
+			<td><?php echo $b['Jumlah LARGE'] ?></td>
 			<td>
 				<a href="det_barang.php?id=<?php echo $b['id']; ?>" class="btn btn-info">Detail</a>
 				<a href="edit.php?id=<?php echo $b['id']; ?>" class="btn btn-warning">Edit</a>
