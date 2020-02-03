@@ -38,13 +38,17 @@ while($d=mysql_fetch_array($det)){
 				</td>
 			</tr>		
 
-			<tr>
+			<!-- <tr>
 				<td>Harga</td>
 				<td><input type="text" class="form-control" name="harga" value="<?php echo $d['harga'] ?>"></td>
-			</tr>
+			</tr> -->
 			<tr>
 				<td>Jumlah</td>
 				<td><input type="text" class="form-control" name="jumlah" value="<?php echo $d['jumlah'] ?>"></td>
+			</tr>
+			<tr>
+				<td>Satuan</td>
+				<td><input type="text" class="form-control" name="satuan" value="<?php echo $d['satuan'] ?>"></td>
 			</tr>
 			<tr>
 				<td></td>
