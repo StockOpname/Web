@@ -44,7 +44,9 @@ if(isset($_GET['tanggal'])){
 		<!-- <th>Harga Terjual /pc</th>
 		<th>Total Harga</th> -->
 		<th>Jumlah</th>
-		<th>Satuan</th>			
+		<th>Jumlah SMALL</th>
+		<th>Jumlah MEDIUM</th>
+		<th>Jumlah LARGE</th>			
 		<!-- <th>Laba</th>	 -->		
 		<th>Opsi</th>
 	</tr>
@@ -66,7 +68,9 @@ if(isset($_GET['tanggal'])){
 			<!-- <td>Rp.<?php echo number_format($b['harga']) ?>,-</td>
 			<td>Rp.<?php echo number_format($b['total_harga']) ?>,-</td> -->
 			<td><?php echo $b['jumlah'] ?></td>	
-			<td><?php echo $b['satuan']?></td>		
+			<td><?php echo $b['Jumlah_SMALL']?></td>
+			<td><?php echo $b['Jumlah_MEDIUM']?></td>
+			<td><?php echo $b['Jumlah_LARGE']?></td>		
 			<!-- <td><?php echo "Rp.".number_format($b['laba']).",-"?></td> -->			
 			<td>		
 				<a href="edit_laku.php?id=<?php echo $b['id']; ?>" class="btn btn-warning">Edit</a>
@@ -144,8 +148,16 @@ if(isset($_GET['tanggal'])){
 							<input name="jumlah" type="text" class="form-control" placeholder="Jumlah" autocomplete="off">
 						</div>																	
 						<div class="form-group">
-							<label>Satuan</label>
-							<input name="satuan" type="text" class="form-control" placeholder="Satuan" autocomplete="off">
+							<label>Jumlah SMALL</label>
+							<input name="Jumlah SMALL" type="text" class="form-control" placeholder="Jumlah SMALL" autocomplete="off">
+						</div>
+						<div class="form-group">
+							<label>Jumlah MEDIUM</label>
+							<input name="Jumlah MEDIUM" type="text" class="form-control" placeholder="Jumlah MEDIUM" autocomplete="off">
+						</div>
+						<div class="form-group">
+							<label>Jumlah LARGE</label>
+							<input name="Jumlah LARGE" type="text" class="form-control" placeholder="Jumlah LARGE" autocomplete="off">
 						</div>
 					</div>
 					<div class="modal-footer">

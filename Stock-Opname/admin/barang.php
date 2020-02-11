@@ -53,11 +53,8 @@ $start = ($page - 1) * $per_hal;
 	<tr>
 		<th class="col-md-1">No</th>
 		<th class="col-md-4">Nama Barang</th>
-<<<<<<< HEAD
-		<th class="col-md-1 ">Harga Jual</th>
-=======
+		<!-- <th class="col-md-1 ">Harga Jual</th> -->
 		<!--<th class="col-md-3">Harga Jual</th> -->
->>>>>>> 6e375f0c580c37c32fa97b50624342a6a8b99950
 		<th class="col-md-1">Jumlah</th>
 		<th class="col-md-1">Jumlah SMALL</th>
 		<th class="col-md-1">Jumlah MEDIUM</th>
@@ -149,8 +146,16 @@ $start = ($page - 1) * $per_hal;
 						<input name="jumlah" type="text" class="form-control" placeholder="Jumlah">
 					</div>
 					<div class="form-group">
-						<label>Satuan</label>
-						<input name="satuan" type="text" class="form-control" placeholder="Satuan">
+						<label>Jumlah SMALL</label>
+						<input name="Jumlah" type="text" class="form-control" placeholder="Jumlah SMALL">
+					</div>
+					<div class="form-group">
+						<label>Jumlah MEDIUM</label>
+						<input name="Jumlah MEDIUM" type="text" class="form-control" placeholder="Jumlah MEDIUM">
+					</div>
+					<div class="form-group">
+						<label>Jumlah LARGE</label>
+						<input name="Jumlah LARGE" type="text" class="form-control" placeholder="Jumlah LARGE">
 					</div>																		
 
 				</div>

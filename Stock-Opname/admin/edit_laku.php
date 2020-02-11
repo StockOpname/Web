@@ -47,8 +47,16 @@ while($d=mysql_fetch_array($det)){
 				<td><input type="text" class="form-control" name="jumlah" value="<?php echo $d['jumlah'] ?>"></td>
 			</tr>
 			<tr>
-				<td>Satuan</td>
-				<td><input type="text" class="form-control" name="satuan" value="<?php echo $d['satuan'] ?>"></td>
+				<td>Jumlah SMALL</td>
+				<td><input type="text" class="form-control" name="Jumlah_SMALL" value="<?php echo $d['Jumlah_SMALL'] ?>"></td>
+			</tr>
+			<tr>
+				<td>Jumlah MEDIUM</td>
+				<td><input type="text" class="form-control" name="Jumlah_MEDIUM" value="<?php echo $d['Jumlah_MEDIUM'] ?>"></td>
+			</tr>
+			<tr>
+				<td>Jumlah LARGE</td>
+				<td><input type="text" class="form-control" name="Jumlah_LARGE" value="<?php echo $d['Jumlah_LARGE'] ?>"></td>
 			</tr>
 			<tr>
 				<td></td>

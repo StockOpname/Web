@@ -38,8 +38,16 @@ while($d=mysql_fetch_array($det)){
 			<td><?php echo $d['jumlah'] ?></td>
 		</tr>
 		<tr>
-			<td>Satuan</td>
-			<td><?php echo $d['satuan'] ?></td>
+			<td>Jumlah SMALL</td>
+			<td><?php echo $d['Jumlah SMALL'] ?></td>
+		</tr>
+		<tr>
+			<td>Jumlah MEDIUM</td>
+			<td><?php echo $d['Jumlah MEDIUM'] ?></td>
+		</tr>
+		<tr>
+			<td>Jumlah LARGE</td>
+			<td><?php echo $d['Jumlah LARGE'] ?></td>
 		</tr>
 		<!-- <tr>
 			<td>Sisa</td>

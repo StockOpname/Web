@@ -37,7 +37,9 @@ $pdf->Cell(4, 0.8, 'Jenis', 1, 0, 'C');
 // $pdf->Cell(4.5, 0.8, 'modal', 1, 0, 'C');
 // $pdf->Cell(4.5, 0.8, 'harga', 1, 0, 'C');
 $pdf->Cell(2, 0.8, 'jumlah', 1, 0, 'C');
-$pdf->Cell(3, 0.8, 'satuan', 1, 1, 'C');
+$pdf->Cell(3, 0.8, 'Jumlah SMALL', 1, 0, 'C');
+$pdf->Cell(3, 0.8, 'Jumlah MEDIUM', 1, 0, 'C');
+$pdf->Cell(3, 0.8, 'Jumlah LARGE', 1, 1, 'C');
 $pdf->SetFont('Arial','',10);
 $no=1;
 $query=mysql_query("select * from barang");
@@ -49,7 +51,9 @@ while($lihat=mysql_fetch_array($query)){
 	// $pdf->Cell(4.5, 0.8, $lihat['modal'], 1, 0,'C');
 	// $pdf->Cell(4.5, 0.8, $lihat['harga'],1, 0, 'C');
 	$pdf->Cell(2, 0.8, $lihat['jumlah'], 1, 0,'C');
-	$pdf->Cell(3, 0.8, $lihat['satuan'], 1, 1,'C');
+	$pdf->Cell(3, 0.8, $lihat['Jumlah SMALL'], 1, 0,'C');
+	$pdf->Cell(3, 0.8, $lihat['Jumlah MEDIUM'], 1, 0,'C');
+	$pdf->Cell(3, 0.8, $lihat['Jumlah LARGE'], 1, 1,'C');
 	$no++;
 }
 
