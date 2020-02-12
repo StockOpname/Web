@@ -20,7 +20,7 @@ while($d=mysql_fetch_array($det)){
 
 			<tr>
 				<td>Tanggal</td>
-				<td><input name="tgl" type="text" class="form-control" id="tgl" autocomplete="off" value="<?php echo $d['tanggal'] ?>"></td>
+				<td><input name="tanggal" type="text" class="form-control" id="tanggal" autocomplete="off" value="<?php echo $d['tanggal'] ?>"></td>
 			</tr>
 			<tr>
 				<td>Nama</td>
@@ -36,12 +36,7 @@ while($d=mysql_fetch_array($det)){
 						?>
 					</select>
 				</td>
-			</tr>		
-
-			<!-- <tr>
-				<td>Harga</td>
-				<td><input type="text" class="form-control" name="harga" value="<?php echo $d['harga'] ?>"></td>
-			</tr> -->
+			</tr>	
 			<tr>
 				<td>Jumlah</td>
 				<td><input type="text" class="form-control" name="jumlah" value="<?php echo $d['jumlah'] ?>"></td>
@@ -65,12 +60,13 @@ while($d=mysql_fetch_array($det)){
 		</table>
 	</form>
 	<?php 
+
 }
 ?>
  <script type="text/javascript">
         $(document).ready(function(){
 
-            $('#tgl').datepicker({dateFormat: 'yy/mm/dd'});
+            $('#tanggal').datepicker({dateFormat: 'yy-mm-dd'});
 
         });
     </script>

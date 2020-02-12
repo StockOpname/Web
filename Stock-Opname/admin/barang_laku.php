@@ -65,13 +65,10 @@ if(isset($_GET['tanggal'])){
 			<td><?php echo $no++ ?></td>
 			<td><?php echo $b['tanggal'] ?></td>
 			<td><?php echo $b['nama'] ?></td>
-			<!-- <td>Rp.<?php echo number_format($b['harga']) ?>,-</td>
-			<td>Rp.<?php echo number_format($b['total_harga']) ?>,-</td> -->
 			<td><?php echo $b['jumlah'] ?></td>	
 			<td><?php echo $b['Jumlah_SMALL']?></td>
 			<td><?php echo $b['Jumlah_MEDIUM']?></td>
-			<td><?php echo $b['Jumlah_LARGE']?></td>		
-			<!-- <td><?php echo "Rp.".number_format($b['laba']).",-"?></td> -->			
+			<td><?php echo $b['Jumlah_LARGE']?></td>			
 			<td>		
 				<a href="edit_laku.php?id=<?php echo $b['id']; ?>" class="btn btn-warning">Edit</a>
 				<a onclick="if(confirm('Apakah anda yakin ingin menghapus data ini ??')){ location.href='hapus_laku.php?id=<?php echo $b['id']; ?>&jumlah=<?php echo $b['jumlah'] ?>&nama=<?php echo $b['nama']; ?>' }" class="btn btn-danger">Hapus</a>
@@ -123,7 +120,7 @@ if(isset($_GET['tanggal'])){
 					<form action="barang_laku_act.php" method="post">
 						<div class="form-group">
 							<label>Tanggal</label>
-							<input name="tgl" type="text" class="form-control" id="tgl" autocomplete="off">
+							<input name="tanggal" type="text" class="form-control" id="tanggal" autocomplete="off">
 						</div>	
 						<div class="form-group">
 							<label>Nama Barang</label>								
@@ -137,12 +134,7 @@ if(isset($_GET['tanggal'])){
 								}
 								?>
 							</select>
-
-						</div>									
-						<!-- <div class="form-group">
-							<label>Harga Jual / unit</label>
-							<input name="harga" type="text" class="form-control" placeholder="Harga" autocomplete="off">
-						</div> -->	
+						</div>	
 						<div class="form-group">
 							<label>Jumlah</label>
 							<input name="jumlah" type="text" class="form-control" placeholder="Jumlah" autocomplete="off">
@@ -171,7 +163,7 @@ if(isset($_GET['tanggal'])){
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$("#tgl").datepicker({dateFormat : 'yy/mm/dd'});							
+			$("#tanggal").datepicker({dateFormat : 'yy/mm/dd'});							
 		});
 	</script>
 	<?php include 'footer.php'; ?>
