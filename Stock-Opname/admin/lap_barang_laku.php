@@ -46,28 +46,28 @@ $pdf->Cell(3, 0.8, 'Jumlah LARGE', 1, 1, 'C');
 
 $no=1;
 $tanggal=$_GET['tanggal'];
-$query=mysql_query("select * from barang_laku where tanggal=" . $tanggal);
-while($lihat=mysql_fetch_array($query)){
-	$pdf->Cell(1, 0.8, $no , 1, 0, 'C');
-	$pdf->Cell(3, 0.8, $lihat['tanggal'],1, 0, 'C');
-	$pdf->Cell(6, 0.8, $lihat['nama'],1, 0, 'C');
-	$pdf->Cell(3, 0.8, $lihat['jumlah'], 1, 0,'C');
+$query = $conn->query("select * from barang_laku where tanggal=" . $tanggal);
+while ($lihat = mysqli_fetch_array($query)) {
+	$pdf->Cell(1, 0.8, $no, 1, 0, 'C');
+	$pdf->Cell(3, 0.8, $lihat['tanggal'], 1, 0, 'C');
+	$pdf->Cell(6, 0.8, $lihat['nama'], 1, 0, 'C');
+	$pdf->Cell(3, 0.8, $lihat['jumlah'], 1, 0, 'C');
 	$pdf->Cell(3, 0.8, $lihat['Jumlah SMALL'], 1, 0, 'C');
 	$pdf->Cell(3, 0.8, $lihat['Jumlah MEDIUM'], 1, 0, 'C');
 	$pdf->Cell(3, 0.8, $lihat['Jumlah LARGE'], 1, 1, 'C');
 	// $pdf->Cell(4, 0.8, "Rp. ".number_format($lihat['harga'])." ,-", 1, 0,'C');
 	// $pdf->Cell(4.5, 0.8, "Rp. ".number_format($lihat['total_harga'])." ,-",1, 1, 'C');
 	// $pdf->Cell(4, 0.8, "Rp. ".number_format($lihat['laba'])." ,-", 1, 1,'C');	
-	
+
 	$no++;
 }
-$q=mysql_query("select sum(total_harga) as total from barang_laku where tanggal=".$tanggal);
+$q = $conn->query("select sum(total_harga) as total from barang_laku where tanggal=" . $tanggal);
 // select sum(total_harga) as total from barang_laku where tanggal='$tanggal'
 // while($total=mysql_fetch_array($q)){
 // 	$pdf->Cell(17, 0.8, "Total Pendapatan", 1, 0,'C');		
 // 	$pdf->Cell(4.5, 0.8, "Rp. ".number_format($total['total'])." ,-", 1, 1,'C');	
 // }
-$qu=mysql_query("select sum(laba) as total_laba from barang_laku where tanggal=".$tanggal);
+$qu = $conn->query("select sum(laba) as total_laba from barang_laku where tanggal=" . $tanggal);
 // select sum(total_harga) as total from barang_laku where tanggal='$tanggal'
 // while($tl=mysql_fetch_array($qu)){
 // 	$pdf->Cell(4, 0.8, "Rp. ".number_format($tl['total_laba'])." ,-", 1, 1,'C');	
