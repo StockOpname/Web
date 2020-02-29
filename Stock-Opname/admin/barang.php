@@ -53,13 +53,15 @@ $start = ($page - 1) * $per_hal;
 	<tr>
 		<th class="col-md-1">No</th>
 		<th class="col-md-2">Nama Barang</th>
-		<th class="col-md-1">jenis Barang</th>
+		<th class="col-md-2">Jenis Barang</th>
+		<!-- <th class="col-md-1 ">Harga Jual</th> -->
+		<!--<th class="col-md-3">Harga Jual</th> -->
 		<th class="col-md-1">Jumlah</th>
 		<th class="col-md-1">Jumlah SMALL</th>
 		<th class="col-md-1">Jumlah MEDIUM</th>
 		<th class="col-md-1">Jumlah LARGE</th>
 		<!-- <th class="col-md-1">Sisa</th>		 -->
-		<th class="col-md-2">Opsi</th>
+		<th class="col-md-3">Opsi</th>
 	</tr>
 	<?php
 	if (isset($_GET['cari'])) {
@@ -77,9 +79,9 @@ $start = ($page - 1) * $per_hal;
 			<td><?= $b['nama'] ?></td>
 			<td><?= $b['jenis'] ?></td>
 			<td><?= $b['jumlah'] ?></td>
-			<td><?= $b['Jumlah SMALL'] ?></td>
-			<td><?= $b['Jumlah MEDIUM'] ?></td>
-			<td><?= $b['Jumlah LARGE'] ?></td>
+			<td><?= $b['Jumlah_SMALL'] ?></td>
+			<td><?= $b['Jumlah_MEDIUM'] ?></td>
+			<td><?= $b['Jumlah_LARGE'] ?></td>
 			<td>
 				<a href="det_barang.php?id=<?= $b['id']; ?>" class="btn btn-info">Detail</a>
 				<a href="edit.php?id=<?= $b['id']; ?>" class="btn btn-warning">Edit</a>

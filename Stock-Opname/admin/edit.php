@@ -10,10 +10,7 @@ while ($d = mysqli_fetch_array($det)) {
 ?>
 	<form action="update.php" method="post">
 		<table class="table">
-			<tr>
-				<td></td>
-				<td><input type="hidden" name="id" value="<?= $d['id'] ?>"></td>
-			</tr>
+			<input type="hidden" name="id" value="<?= $d['id'] ?>">
 			<tr>
 				<td>Nama</td>
 				<td><input type="text" class="form-control" name="nama" value="<?= $d['nama'] ?>"></td>
@@ -36,19 +33,19 @@ while ($d = mysqli_fetch_array($det)) {
 			</tr> -->
 			<tr>
 				<td>Jumlah</td>
-				<td><input type="text" class="form-control" name="jumlah" value="<?= $d['jumlah'] ?>"></td>
+				<td><input type="number" class="form-control" name="jumlah" value="<?= $d['jumlah'] ?>"></td>
 			</tr>
 			<tr>
 				<td>Jumlah SMALL</td>
-				<td><input type="text" class="form-control" name="Jumlah SMALL" value="<?= $d['Jumlah SMALL'] ?>"></td>
+				<td><input type="number" class="form-control" name="Jumlah_SMALL" value="<?= $d['Jumlah_SMALL'] ?>"></td>
 			</tr>
 			<tr>
 				<td>Jumlah MEDIUM</td>
-				<td><input type="text" class="form-control" name="Jumlah MEDIUM" value="<?= $d['Jumlah MEDIUM'] ?>"></td>
+				<td><input type="number" class="form-control" name="Jumlah_MEDIUM" value="<?= $d['Jumlah_MEDIUM'] ?>"></td>
 			</tr>
 			<tr>
 				<td>Jumlah LARGE</td>
-				<td><input type="text" class="form-control" name="Jumlah LARGE" value="<?= $d['Jumlah LARGE'] ?>"></td>
+				<td><input type="number" class="form-control" name="Jumlah_LARGE" value="<?= $d['Jumlah_LARGE'] ?>"></td>
 			</tr>
 			<tr>
 				<td></td>
